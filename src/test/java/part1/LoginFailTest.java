@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class FirstSeleniumTest {
+public class LoginFailTest {
 	WebDriver driver; //control the browser and help find elements
 	
 	@BeforeClass //a way for us to run the code BEFORE the class
@@ -41,7 +41,7 @@ public class FirstSeleniumTest {
 		Thread.sleep(2000);
 		String actualResult = driver.findElement(By.tagName("h6")).getText();
 		String expectedResult = "Dashboard";
-		Assert.assertEquals(actualResult, expectedResult);
+		Assert.assertNotEquals(actualResult, expectedResult);
 		
 	}
 }

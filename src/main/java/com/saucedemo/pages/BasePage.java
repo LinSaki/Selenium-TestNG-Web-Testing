@@ -6,7 +6,11 @@ import org.openqa.selenium.WebElement;
 
 public class BasePage { //make abstract later so it will be the parent to all page object classes
 
-	public static WebDriver driver; //so all the page object classes can access the driver
+	protected static WebDriver driver; //so all the page object classes can access the driver
+	
+	public BasePage(WebDriver driver) {
+		this.driver = driver;
+	}
 	
 	public void setDriver(WebDriver driver) {
 		BasePage.driver = driver;

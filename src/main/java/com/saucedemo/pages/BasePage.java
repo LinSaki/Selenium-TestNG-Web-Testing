@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public  class BasePage { //make abstract later so it will be the parent to all page object classes
+public class BasePage { //make abstract later so it will be the parent to all page object classes
 
 	public static WebDriver driver; //so all the page object classes can access the driver
 	

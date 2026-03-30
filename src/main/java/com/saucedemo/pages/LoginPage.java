@@ -3,8 +3,8 @@ package com.saucedemo.pages;
 import org.openqa.selenium.By;
 
 public class LoginPage extends BasePage {
-	private By usernameField;
-	private By passwordField;
-	private By loginButton;
-	private By errorMessage;
+	private By usernameField = By.id("user-name");
+	private By passwordField = By.id("password");
+	private By loginButton = By.id("login-button");
+	private By errorMessage = By.xpath("#login_button_container h3");
 }

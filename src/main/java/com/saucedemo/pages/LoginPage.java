@@ -17,7 +17,8 @@ public class LoginPage extends BasePage {
 		set(passwordField, password);
 	}
 	
-	public void clickLoginButton() { //transition method, should NOT be void, it redirects you somewhere
+	public ProductsPage clickLoginButton() { //transition method, should NOT be void, it redirects you somewhere
 		click(loginButton);
+		return new ProductsPage();
 	}
 }

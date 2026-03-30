@@ -43,5 +43,7 @@ public class LoginFailTest {
 		String expectedResult = "Dashboard";
 		Assert.assertNotEquals(actualResult, expectedResult);
 		
+		
+		//POM- Page, Object, Model encourages re-usability, readability and maintainability
 	}
 }

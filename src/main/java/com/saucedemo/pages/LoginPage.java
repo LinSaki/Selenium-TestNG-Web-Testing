@@ -27,4 +27,8 @@ public class LoginPage extends BasePage {
 		setPassword(password);
 		return clickLoginButton();
 	}
+	
+	public String getErrorMessage() {
+		return find(errorMessage).getText();
+	}
 }

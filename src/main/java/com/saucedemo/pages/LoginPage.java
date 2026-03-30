@@ -21,4 +21,10 @@ public class LoginPage extends BasePage {
 		click(loginButton);
 		return new ProductsPage();
 	}
+	
+	public ProductsPage logIntoApplication(String username, String password) { //convenience method - combines setting user & pass & login button 
+		setUsername(username);
+		setPassword(password);
+		return clickLoginButton();
+	}
 }

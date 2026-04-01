@@ -18,7 +18,6 @@ public class BaseTest {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
-		basePage = new BasePage(driver);
 		loginPage = new LoginPage(driver);
 	}
 	

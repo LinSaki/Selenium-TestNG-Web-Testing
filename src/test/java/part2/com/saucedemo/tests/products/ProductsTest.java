@@ -11,6 +11,6 @@ public class ProductsTest extends BaseTest {
 	@Test
 	public void testProductsHeaderIsDisplayed() { //use convenience method
 		ProductsPage productsPage = loginPage.logIntoApplication("standard_user", "secret_sauce");
-	Assert.assertTrue(productsPage.isProductsHeaderDIsplayed(), "\n Products Header is NOT displayed \n ");
+		Assert.assertTrue(productsPage.isProductsHeaderDIsplayed(), "\n Products Header is NOT displayed \n ");
 	}
 }

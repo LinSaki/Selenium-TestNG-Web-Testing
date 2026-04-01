@@ -22,7 +22,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void loadApplication() { //load app with driver.get method
 		driver.get(DEMOQA_URL);
-		basePage = new BasePage(driver);
+		//basePage = new BasePage(driver);
 		homePage = new HomePage(driver);
 	}
 	
